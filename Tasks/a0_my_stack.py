@@ -24,8 +24,7 @@ def pop() -> Any:
 
     :return: popped element
     """
-    my_stack.pop(-1)
-    return None
+    return my_stack.append(-1)
 
 
 def peek(ind: int = 0) -> Any:
