@@ -3,6 +3,9 @@ My little Stack
 """
 from typing import Any
 
+my_stack = []
+
+
 
 def push(elem: Any) -> None:
     """
@@ -11,7 +14,8 @@ def push(elem: Any) -> None:
     :param elem: element to be pushed
     :return: Nothing
     """
-    print(elem)
+    # print(elem)
+    my_stack.append(elem)
     return None
 
 
@@ -41,4 +45,17 @@ def clear() -> None:
 
     :return: None
     """
+    my_stack.clear()
     return None
+if __name__ == "__main__":
+    print(my_stack)
+    push(1)
+    print(my_stack)
+    push(2)
+    print(my_stack)
+
+    clear()
+    print(my_stack)
+
+
+
