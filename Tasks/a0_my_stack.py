@@ -6,7 +6,6 @@ from typing import Any
 my_stack = []
 
 
-
 def push(elem: Any) -> None:
     """
     Operation that add element to stack
@@ -25,6 +24,7 @@ def pop() -> Any:
 
     :return: popped element
     """
+    my_stack.pop(-1)
     return None
 
 
@@ -47,6 +47,8 @@ def clear() -> None:
     """
     my_stack.clear()
     return None
+
+
 if __name__ == "__main__":
     print(my_stack)
     push(1)
@@ -56,6 +58,3 @@ if __name__ == "__main__":
 
     clear()
     print(my_stack)
-
-
-
