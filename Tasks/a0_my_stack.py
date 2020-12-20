@@ -24,7 +24,9 @@ def pop() -> Any:
 
     :return: popped element
     """
-    return my_stack.append(-1)
+    if not my_stack:
+        return None
+    return my_stack.pop(-1)
 
 
 def peek(ind: int = 0) -> Any:
@@ -56,5 +58,5 @@ if __name__ == "__main__":
     push(2)
     print(my_stack)
 
-    clear()
+    pop()
     print(my_stack)
